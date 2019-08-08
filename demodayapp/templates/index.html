@@ -1,0 +1,34 @@
+{% extends 'shared/layout.html' %}
+{% block conteudo %}
+
+<form action="/demodayapp/templates/index.html" method="POST">
+    
+    <div>
+    <label for="male">sac</label>
+    <input type="radio" name="gender" id="male" value="male"><br>
+    <input type="submit" value="Submit">[]
+    </div>
+
+    <div>
+    <label for="female">price</label>
+    <input type="radio" name="gender" id="other" value="other"><br>
+    <br>
+    <input type="submit" value="Submit">
+    </div>
+</form>
+
+<!-- 
+<table>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+    <tr>
+        <label></label>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+  </table> -->
+{{msg}}
+
+{% endblock %}
